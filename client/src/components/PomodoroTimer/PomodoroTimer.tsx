@@ -7,7 +7,6 @@ type Props = {
 export default function PomodoroTimer({ stylingClasses }: Props) {
   
   const [time, setTime]: [number, Dispatch<SetStateAction<number>>] = useState(1500);
-  const [displayTime, setDisplayTime]: [string, Dispatch<SetStateAction<string>>] = useState("25:00")
   
   // timer
   useEffect(() => { 
